@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,45 @@
     </head>
 
     <body>
+     <div class="main">
+        <div class="info">
 
+        <h1>To-Do List</h1>
+        <hr>
+
+        <div class="add_task_bar">
+        <input type="text" id="add_task" name="add_task" placeholder="Add a Task">
+        <button aria-label="Add Task">+</button>
+        </div>
+
+        <div class="list">
+        <ul>
+            <li>
+                <input type="checkbox" id="item1">
+                <label for="item1">Make Bed</label>
+                <button class="remove_item">x</button>
+            </li>
+            <li>
+                <input type="checkbox" id="item2">
+                <label for="item2">Go Grocery Shopping</label>
+                <button class="remove_item">x</button>
+            </li>
+            <li>
+                <input type="checkbox" id="item3">
+                <label for="item3">Go to the Gym</label>
+                <button class="remove_item">x</button>
+            </li>
+        </ul>
+        </div>
+
+        <div class="completed_list">
+            <h3>>Completed</h3>
+            <ul class="drop_down_li"></ul>
+        </div>
+
+
+        </div>
+     </div>
     </body>
+
 </html>
