@@ -17,14 +17,22 @@ function addTask(event){
 const taskText = taskInput.value;
 taskInput.value = "";
 
+const checkbox = document.createElement("input")
 const taskList = document.createElement("li");
-const span = document.createElement("span");
+const div = document.createElement("div");
 const removeButton = document.createElement("button");
 
-span.textContent = taskText;
+checkbox.type = "checkbox";
+div.textContent = taskText;
 removeButton.textContent = "Remove";
 
-taskList.appendChild(span);
+checkbox.classList.add("checkbox");
+taskList.classList.add("item_list");
+div.classList.add("list");
+removeButton.classList.add("remove_item");
+
+taskList.appendChild(checkbox);
+taskList.appendChild(div);
 taskList.appendChild(removeButton);
 task.appendChild(taskList);
 
