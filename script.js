@@ -36,8 +36,21 @@ taskList.appendChild(div);
 taskList.appendChild(removeButton);
 task.appendChild(taskList);
 
+checkbox.addEventListener("change", function(){
+    if (checkbox.checked){
+        div.style.textDecoration = "line-through";
+    } else {
+        div.style.textDecoration = "none";
+    }
+});
+
 removeButton.addEventListener ("click", () => {
     task.removeChild(taskList)
 });
 taskInput.focus();
 };
+
+//Completed Task Logic
+
+function taskComplete(event){
+}
