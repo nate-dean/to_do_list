@@ -24,7 +24,7 @@ const removeButton = document.createElement("button");
 
 checkbox.type = "checkbox";
 div.textContent = taskText;
-removeButton.textContent = "Remove";
+removeButton.textContent = "X";
 
 checkbox.classList.add("checkbox");
 taskList.classList.add("item_list");
