@@ -1,6 +1,7 @@
 const task = document.getElementById("display_task_list");
 const taskInput = document.getElementById("add_task");
 const addTaskButton = document.getElementById("add_task_button");
+const completedTask = document.getElementById("completed_task_list");
 
 //Add Task Button Logic
 addTaskButton.addEventListener("click", addTask);
@@ -44,13 +45,18 @@ checkbox.addEventListener("change", function(){
     }
 });
 
+//Completed Task Logic
+
+taskList.addEventListener("change", function(event) {
+    const checkbox = event.target;
+    if (checkbox.tagName === "INPUT" && checkbox.checked) {
+        const taskItem = checkbox.closest("li");
+        completedTask.appendChild(taskItem);
+}
+});
+
 removeButton.addEventListener ("click", () => {
     task.removeChild(taskList)
 });
 taskInput.focus();
 };
-
-//Completed Task Logic
-
-function taskComplete(event){
-}
