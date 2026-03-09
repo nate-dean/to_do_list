@@ -45,24 +45,17 @@ checkbox.addEventListener("change", function(){
     }
 });
 
-//Completed Task Logic Struggling to make remove button work on completed list.
+//Completed Task Logic 
 
 taskList.addEventListener("change", function(event) {
     const checkbox = event.target;
     if (checkbox.tagName === "INPUT" && checkbox.checked) {
         const task = checkbox.closest("li");
         completedTask.appendChild(task);
+} else {
+    task.appendChild(taskList);
 }
 });
-
-// completedTask.addEventListener("change", function(event) {
-//     if(checkbox.tagName === 'INPUT' && !checkbox.checked) {
-//         const taskItem = checkbox.closest("li");
-//         taskList.appendChild(taskItem);
-//     }
-// });
-
-
 
 removeButton.addEventListener ("click", () => {
     div.remove();
@@ -73,7 +66,7 @@ removeButton.addEventListener ("click", () => {
 taskInput.focus();
 };
 
-//Completed Task More Logic
+
 
 
 
