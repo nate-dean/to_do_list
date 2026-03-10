@@ -8,8 +8,11 @@ A simple To Do List for managing tasks. You can add, update and deleted tasks.
 - Checked Tasks are moved to a Completed List
 - Mobile User Friendly
 
+# Live Preview
+
+https://nate-dean.github.io/to_do_list/
+
 # Installation
 
 Clone the Repository:
 https://github.com/nate-dean/to_do_list.git
-
